@@ -64,9 +64,7 @@ def get_messages(content):
     messages = ''
     c = 0
     count_events = read_count()
-
-    rows = content.select('tr[bgcolor="#FFEAEA"]')
-    rows = rows + content.select('tr[bgcolor="white"]')
+    rows = content.select('tr[style="font-family:Verdana,Arial; font-size:10px; text-decoration:none; color:black;"]')    
 
     for r in rows:
         row = str(r.findAll("td")) 
